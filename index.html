@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<button type="button" onclick="nvInscription()">Nouvelle Inscription</button>
+<button>Supprimer</button>
+<button>afficher les Session d'examens</button>
+
+<form id="formInsc" style="display: none;">
+    Code candidat :
+    <input type="text" id="code" required >
+    <span id="errCode"></span>
+
+   Nom :
+    <input type="text" id="nom" required >
+    <span id="errNom"></span>
+
+    Prenom :
+    <input type="text" id="prenom" required >
+    <span id="errPrenom"></span>
+
+    Categorie du permis  :
+    <input type="text" id="permis" required >
+    <span id="errPermis"></span>
+
+    Numero de telephone :
+    <input type="text" id="tele" required >
+    <span id="errTele"></span><br>
+
+    <button>Sauvegarder</button>
+    <button>Annuler</button>
+    <button>Vider</button>
+</form>
+<h2>Liostes des candidats </h2>
+<table id="tableIns">
+    <thead>
+        <tr>
+            <th>Code candidat</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Categorie de permis</th>
+            <th>Telephone</th>
+        </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+</table>
+</body>
+</html>
