@@ -5,8 +5,8 @@
 <body>
 
 <button type="button" onclick="nvInscription()">Nouvelle Inscription</button>
-<button>Supprimer</button>
-<button>afficher les Session d'examens</button>
+<button onclick="supprimer()">Supprimer</button>
+<button onclick="afficherSess()">afficher les Session d'examens</button>
 
 <form id="formInsc" style="display: none;">
     Code candidat :
@@ -30,8 +30,8 @@
     <span id="errTele"></span><br>
 
     <button onclick="Sauvegarder()">Sauvegarder</button>
-    <button>Annuler</button>
-    <button>Vider</button>
+    <button onclick="annuler()">Annuler</button>
+    <button onclick="vider()">Vider</button>
 </form>
 <h2>Liostes des candidats </h2>
 <table id="tableIns">
@@ -46,6 +46,10 @@
     </thead>
     <tbody id="tbody"></tbody>
 </table>
+
+<ul id="lisste">
+
+</ul>
 
 <script src="script26.js"></script>
 </body>
