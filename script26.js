@@ -156,7 +156,7 @@ let sessions = [
 ];
 
 function afficherSess() {
-    let liste = document.querySelector('#lisst')
+    let liste = document.querySelector('#lisste')
 
     liste.innerHTML = '';
     for (let s of sessions) {
